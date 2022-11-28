@@ -1,6 +1,6 @@
-# RutDevKit-PSoC62 DIABLO16 4.3" uLCD Demo
+# RDK2 DIABLO16 4.3" uLCD Demo
 
-Rutronik Development Kit Programmable System-on-Chip CY8C6245AZI-S3D72 "RutDevKit-PSoC62_GEN4_ULCD_43" Demo Application. 
+Rutronik Development Kit Programmable System-on-Chip CY8C6245AZI-S3D72 "RDK2_GEN4_ULCD_43" Demo Application. 
 
 Firmware example demonstrates the usage of the 4D Systems DIABLO16 graphics controller based 4.3" display with integrated capacitive touch panel - gen4-uLCD-43DCT-CLB. The display is controlled using the UART interface. The 115200 bit/s baud rate is enough for the typical application to be responsive to the touch on the display without noticeable lag. Nevertheless, the UART baud rate can be increased to 600000bit/s. For quick integration with RDK2 the Arduino adapter 4D-ARDUINO-ADAPTOR-SHIELD-II is recommended. Although the example is referring to the SGP40 sensors VOC data by default, it is also capable of automatically switching to the onboard potentiometer ADC if the sensor will not be attached to I2C.
 
@@ -35,11 +35,16 @@ The events such as touch on the buttons are received periodically executing this
 genieDoEvents(true);
 ```
 
+## Requirements
+
+- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) v3.0
+
 ### Using the code example with a ModusToolbox IDE:
 
 1. Import the project: **File** > **Import...** > **General** > **Existing Projects into Workspace** > **Next**.
-2. Select the directory where **"RutDevKit-PSoC62_GEN4_ULCD_43"** resides and click  **Finish**.
-3. Select and build the project **Project ** > **Build Project**.
+2. Select the directory where **"RDK2_GEN4_ULCD_43"** resides and click  **Finish**.
+3. Update libraries using  a **"Library Manager"** tool.
+4. Select and build the project **Project ** > **Build Project**.
 
 ### Operation
 
