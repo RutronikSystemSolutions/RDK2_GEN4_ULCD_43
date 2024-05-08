@@ -4,7 +4,7 @@ Rutronik Development Kit Programmable System-on-Chip CY8C6245AZI-S3D72 "RDK2_GEN
 
 Firmware example demonstrates the usage of the 4D Systems DIABLO16 graphics controller based 4.3" display with integrated capacitive touch panel - gen4-uLCD-43DCT-CLB. The display is controlled using the UART interface. The 115200 bit/s baud rate is enough for the typical application to be responsive to the touch on the display without noticeable lag. Nevertheless, the UART baud rate can be increased to 600000bit/s. For quick integration with RDK2 the Arduino adapter 4D-ARDUINO-ADAPTOR-SHIELD-II is recommended. Although the example is referring to the SGP40 sensors VOC data by default, it is also capable of automatically switching to the onboard potentiometer ADC if the sensor will not be attached to I2C.
 
- <img src="images/rutdevkit_model.png" style="zoom:20%;" />
+<img src="images/rdk2_rev1.jpg" style="zoom:80%;" />
 
 The ViSi-Genie code library is provided to be used in ModusToolboxTM IDE with RDK2. The user API configuration functions and event handler has been implemented to enable the library.
 
@@ -37,7 +37,11 @@ genieDoEvents(true);
 
 ## Requirements
 
-- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) v3.0
+- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) **v3.x** [built with **v3.0**]
+
+## Supported toolchains (make variable 'TOOLCHAIN')
+
+- GNU Arm&reg; Embedded Compiler v11.3.1 (`GCC_ARM`) - Default value of `TOOLCHAIN`
 
 ## Using the code example
 
