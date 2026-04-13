@@ -2,11 +2,11 @@
 
 Rutronik Development Kit Programmable System-on-Chip CY8C6245AZI-S3D72 "RDK2_GEN4_ULCD_43" Demo Application. 
 
-Firmware example demonstrates the usage of the 4D Systems DIABLO16 graphics controller based 4.3" display with integrated capacitive touch panel - gen4-uLCD-43DCT-CLB. The display is controlled using the UART interface. The 115200 bit/s baud rate is enough for the typical application to be responsive to the touch on the display without noticeable lag. Nevertheless, the UART baud rate can be increased to 600000bit/s. For quick integration with RDK2 the Arduino adapter 4D-ARDUINO-ADAPTOR-SHIELD-II is recommended. Although the example is referring to the SGP40 sensors VOC data by default, it is also capable of automatically switching to the onboard potentiometer ADC if the sensor will not be attached to I2C.
+Firmware example demonstrates the usage of the 4D Systems DIABLO16 graphics controller-based 4.3" display with integrated capacitive touch panel - gen4-uLCD-43DCT-CLB. The display is controlled using the UART interface. The 115200 bit/s baud rate is sufficient for the typical application to respond to touch on the display without noticeable lag. Nevertheless, the UART baud rate can be increased to 600000bit/s. For quick integration with RDK2, the Arduino adapter 4D-ARDUINO-ADAPTOR-SHIELD-II is recommended. Although the example defaults to the SGP40 sensors' VOC data, it can also automatically switch to the onboard potentiometer ADC if the sensor is not attached to I2C.
 
 <img src="images/rdk2_rev1.jpg" style="zoom:80%;" />
 
-The ViSi-Genie code library is provided to be used in ModusToolboxTM IDE with RDK2. The user API configuration functions and event handler has been implemented to enable the library.
+The ViSi-Genie code library is provided for use in the ModusToolboxTM IDE with RDK2. The user API configuration functions and event handler have been implemented to enable the library.
 
 ```c
 /* UserApiConfig */
@@ -37,11 +37,11 @@ genieDoEvents(true);
 
 ## Requirements
 
-- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) **v2025.4.0** [built with **v3.0**]
+- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) **v3.7** [built with **v3.0**]
 
 ## Supported toolchains (make variable 'TOOLCHAIN')
 
-- GNU Arm&reg; Embedded Compiler v11.3.1 (`GCC_ARM`) - Default value of `TOOLCHAIN`
+- GNU Arm&reg; Embedded Compiler v14.2.1 (`GCC_ARM`) - Default value of `TOOLCHAIN`
 
 ## Using the code example
 
@@ -156,7 +156,7 @@ The example was ported from the **"4D Systems Genie Port"** provided by Robby Ch
 
 [https://github.com/RobbyChapman/4d_systems_genie_port](https://github.com/RobbyChapman/4d_systems_genie_port)
 
-All the graphics objects are designed and programmed to the display memory using the „Workshop4 IDE“. The provided example demonstrates the basics – a gauge for the VOC Index, the chart so-called „Scope“ which is updated every 10 seconds to be able to see how the values are changing in time. Also, a few buttons that control the onboard and on-screen LEDs are implemented to demonstrate how the Visi-Genie events work.
+All the graphics objects are designed and programmed to the display memory using the „Workshop4 IDE“. The provided example demonstrates the basics – a gauge for the VOC Index, the so-called "Scope " chart, which is updated every 10 seconds to show how the values change over time. Also, a few buttons that control the onboard and on-screen LEDs are implemented to demonstrate how the Visi-Genie events work.
 
 <img src="images/demo_setup.jpg" style="zoom:25%;" />
 
